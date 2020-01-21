@@ -60,6 +60,7 @@ if (isset($_POST['submit'])) {
         .done(function(data) {
             // Show formatted JSON on webpage.
             $("#responseTextArea").val(JSON.stringify(data, null, 2));
+			 $("#description").text(data.description.captions[0].text);
         })
  
         .fail(function(jqXHR, textStatus, errorThrown) {
@@ -74,7 +75,7 @@ if (isset($_POST['submit'])) {
 </script>
  
 <h1>Analyze image:</h1>
-Tekan tombol <strong>Analyze image</strong> untuk memulai proses analisis gambar.
+Push Button <strong>Analyze image</strong> to start the image analysis process
 <br><br>
 URL gambar:
 <input type="text" name="inputImage" id="inputImage"
@@ -95,6 +96,8 @@ document.getElementById('analyze_btn').click();
         Source image:
         <br><br>
         <img id="sourceImage" width="400" />
+		<br>
+		<p>Analyze Image Description: </p><h3 id="description">Loading description. . .</h3>
     </div>
 </div>
 </body>

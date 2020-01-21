@@ -34,7 +34,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Image Analyzer App</title>
+    <title>Smart Vision</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -47,8 +47,8 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <body>
 	<main role="main" class="container">
     		<div class="starter-template"> <br>
-        		<h1>Image Analyzer</h1>
-				<p class="lead">Pilih foto dari komputer yang ingin Anda analisis. lalu klik tombol <b>Upload</b> <br>Untuk memulai proses analisis foto, pilih tombol <b>Analyze!</b> pada pilihan gambar di masing-masing daftar.</p>
+        		<h1>Smart Vision</h1>
+				<p class="lead">Select photos from the computer that you want to analyze. then click the button <b>Upload</b> <br>To start the photo analysis process, select the button <b>Analyze!</b> in the selection of images in each list.</p>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">
