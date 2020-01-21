@@ -79,7 +79,7 @@ Push Button <strong>Analyze image</strong> to start the image analysis process
 <br><br>
 URL gambar:
 <input type="text" name="inputImage" id="inputImage"
-    value="<?php echo $url ?>" readonly />
+    value="<?php echo $url ?>"/>
 <button id="analyze_btn" onclick="processImage()">Analyze image</button>
 <br><br>
 <script language="javascript">
